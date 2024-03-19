@@ -1,0 +1,350 @@
+@import "./reset.css";
+@import "./main.css";
+
+#skipNav {
+  position: absolute;
+  width: 100%;
+}
+#skipNav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: #fff;
+  transform: translateY(-100%);
+  z-index: 10;
+}
+#skipNav a:active,
+#skipNav a:focus {
+  transform: translateY(0);
+  outline: none;
+  border: 2px solid #f00;
+}
+
+.header {
+  position: relative;
+  background: #fff;
+}
+.header .header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-top .logo-area a:before {
+  content: "";
+  display: inline-block;
+  background: url("../images/icon_common.png") -5px -165px;
+  margin-top: 8px;
+  width: 105px;
+  height: 27px;
+}
+.header .gnb {
+  display: flex;
+  margin-right: auto;
+  margin-left: 62px;
+}
+.header .gnb .gnb-list {
+  display: flex;
+}
+.header .gnb .gnb-item + .gnb-item {
+  padding-left: 20px;
+}
+.header .gnb a {
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.header .util-area {
+  display: flex;
+  align-items: center;
+}
+.header .util-area ul {
+  display: flex;
+}
+.header .util-area li {
+  padding: 0 10px;
+}
+.header .util-area a {
+  height: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.header .gnb a:hover,
+.header .util-area a:hover {
+  color: #2292e9;
+}
+.header .header-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+.header .header-bottom .slogan-area {
+  margin: 38px 0 30px;
+}
+.header .header-bottom .slogan-area a:before {
+  content: "";
+  display: inline-block;
+  background: url(../images/seoul-slogan.png) no-repeat 0 0;
+  width: 133px;
+  height: 51px;
+}
+.header .header-bottom .search-area {
+  position: absolute;
+  left: 50%;
+  width: 520px;
+  height: 42px;
+  border: 3px solid #2292e9;
+  margin-left: -326px;
+}
+.header .header-bottom .search-area fieldset {
+  display: flex;
+}
+.header .header-bottom .search-area [class*="btn-"] {
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom .search-area input[type="text"] {
+  color: #767676;
+  flex: 1;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 16px;
+}
+.header .search-area input[type="text"]::placeholder {
+  color: #2292e9;
+  font-size: 14px;
+}
+.header .header-bottom .search-area .btn-keyboard::before {
+  content: "";
+  display: inline-block;
+  width: 29px;
+  height: 16px;
+  margin: 6px 6px 0;
+  background: url(../images/keyboard.png) no-repeat;
+}
+.header .header-bottom .search-area .btn-search:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: url(../images/icon_common.png) no-repeat -32px -97px;
+}
+.header .header-bottom .lang-area {
+  position: absolute;
+  width: 110px;
+  height: 21px;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+.header .lang-area select {
+  width: 80px;
+  height: 21px;
+  border: 1px solid #afcfea;
+  color: #1e6cb3;
+  font-size: 12px;
+  padding: 0 0 0 2px;
+  box-sizing: border-box;
+  line-height: 21px;
+  appearance: none;
+  background: url(../images/select_arrow.png) no-repeat no-repeat 96% center;
+  background-size: 8px auto;
+}
+.header .lang-area .btn-select {
+  width: 30px;
+  font-size: 11px;
+  color: #fff;
+  background-color: #1e6cb3;
+  border: 0;
+  height: 21px;
+  display: inline-block;
+  padding: 0;
+}
+.header .header-bottom .weather-area {
+  display: flex;
+  width: 270px;
+  height: 85px;
+  margin-left: 5px;
+  margin-top: 34px;
+}
+.header .weather-area .thumb-box {
+  margin-top: 4px;
+  margin-left: 3px;
+}
+.header .weather-area .info-box {
+  max-width: 242px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.header .weather-area .deg {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.header .weather-area .text {
+  font-size: 16px;
+  letter-spacing: -0.1em;
+}
+.header .weather-area .link-cleanair {
+  margin-top: 7px;
+  display: flex;
+  font-size: 13px;
+  letter-spacing: -1px;
+}
+.header .weather-area .link-cleanair .good {
+  color: #0068b7;
+}
+.header .weather-area .link-cleanair .average {
+  color: #009944;
+}
+.footer {
+  position: relative;
+}
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.footer .footer-top .link-area,
+.footer .footer-top .sns-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.footer .footer-top .link-area li {
+  position: relative;
+}
+.footer .footer-top .link-area li + li {
+  padding-left: 20px;
+}
+.footer .footer-top .link-area li:first-child:before {
+  display: none;
+}
+.footer .footer-top .link-area li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-left: -10px;
+  display: block;
+  width: 1px;
+  height: 14px;
+  margin-top: -6px;
+  background: #dcdcdc;
+}
+.footer .footer-top .link-area a {
+  font-size: 12px;
+  color: #636363;
+}
+.footer .link-area .policy a {
+  color: #000;
+  font-weight: 700;
+}
+.footer .footer-top .sns-area li + li {
+  position: relative;
+  margin-left: 12px;
+}
+.footer .sns-area a {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icon_sns.png) no-repeat;
+  font-size: 0;
+}
+.footer .sns-area .f-facebook {
+  background-position: -25px 0px;
+}
+.footer .sns-area .f-facebook:hover {
+  background-position: -25px -25px;
+}
+.footer .sns-area .f-insta {
+  background-position: -75px 0px;
+}
+.footer .sns-area .f-insta:hover {
+  background-position: -75px -25px;
+}
+.footer .sns-area .f-youtube {
+  background-position: -125px 0px;
+}
+.footer .sns-area .f-youtube:hover {
+  background-position: -125px -25px;
+}
+.footer .sns-area .f-twitter {
+  background-position: -50px 0px;
+}
+.footer .sns-area .f-twitter:hover {
+  background-position: -50px -25px;
+}
+.footer .sns-area .f-blog {
+  background-position: -150px 0px;
+}
+.footer .sns-area .f-blog:hover {
+  background-position: -150px -25px;
+}
+.footer .sns-area .f-kakaostory {
+  background-position: -100px 0px;
+}
+.footer .sns-area .f-kakaostory:hover {
+  background-position: -100px -25px;
+}
+.footer .sns-area .f-kakaochannel {
+  background-position: -175px 0px;
+}
+.footer .sns-area .f-kakaochannel:hover {
+  background-position: -175px -25px;
+}
+.footer .footer-bottom {
+  position: relative;
+  display: flex;
+  padding: 22px 0;
+  border-top: 1px solid #ccc;
+}
+.footer .inquery {
+  margin-right: 40px;
+  width: 108px;
+  height: 45px;
+  background: url(../images/icon_common.png) no-repeat -180px 0;
+}
+.footer .address-area p {
+  padding-bottom: 2px;
+  font-size: 12px;
+  color: #636363;
+}
+.footer .address-area .map {
+  font-size: 11px;
+  font-weight: 400;
+}
+.footer .address-area .copy {
+  font-size: 11px;
+}
+.footer .mark {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 0;
+}
+.footer .mark a {
+  display: inline-block;
+}
+.btn-top {
+  position: fixed;
+  bottom: -100px;
+  right: 10%;
+  display: block;
+  /* left: 50%; */
+  /* margin-left: 600px; */
+  opacity: 0;
+  transition: 1s;
+  z-index: 100;
+}
+.btn-top.show {
+  opacity: 1;
+  bottom: 98px;
+}
+.btn-top img {
+  width: 34px;
+  height: 34px;
+}
